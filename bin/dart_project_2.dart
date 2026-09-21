@@ -49,4 +49,27 @@ void main(List<String> arguments) {
 
   dataBuah.add("Jambu");
   dataBuah.add("Apel");
+  tampilData(dataBuah);
+
+  dataBuah.removeAt(1);
+  tampilData(dataBuah);
+
+  dataBuah.sort((a, b){
+    return a.compareTo(b);
+  },);
+  tampilData(dataBuah);
+  
+  if(dataBuah.contains("Jeruk")){
+    print("Ada data buah jeruk");
+  }else{
+    print("Tidak ada data jeruk");
+  }
+}
+
+void tampilData(List<String>dataBuah){
+  print("-------------------------------------");
+  dataBuah.forEach(
+    (el) => print(el),
+  );
+  print("-------------------------------------");
 }
