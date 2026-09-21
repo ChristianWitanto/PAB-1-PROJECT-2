@@ -64,6 +64,19 @@ void main(List<String> arguments) {
   }else{
     print("Tidak ada data jeruk");
   }
+  //Map
+  var dataMap={
+    "satu":"nomor satu MAP",
+    "dua" :"nomor dua MAP",
+    "tiga":"nomor tiga MAP"
+  };
+  print(dataMap["dua"]);
+  dataMap["empat"]="nomor empat";
+  dataMap["lima"]="nomor lima";
+  
+  dataMap.forEach((key, value) {
+    print(value);
+  },);
 }
 
 void tampilData(List<String>dataBuah){
