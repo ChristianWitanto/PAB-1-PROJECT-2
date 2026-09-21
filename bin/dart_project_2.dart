@@ -44,4 +44,9 @@ void main(List<String> arguments) {
   for(int i=0;i<dataBuah.length;i++){
     print(dataBuah[i]);
   }
+
+  dataBuah.forEach((element) => print(element),);
+
+  dataBuah.add("Jambu");
+  dataBuah.add("Apel");
 }
